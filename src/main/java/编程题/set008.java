@@ -88,7 +88,7 @@ class MyComparator implements Comparator<String> {
 class Person {
     int score;
 
-    public Person(int score) {
+     public Person(int score) {
         this.score = score;
     }
 
