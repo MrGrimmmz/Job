@@ -17,6 +17,8 @@ end
 ```
 
 ###防止错误删除锁
+- 根本问题还是保证操作的原子性，因为是两步操作，即便判断到是当前线程的锁，但是也有可能再删除之前刚好过期，这样删除的就是其他线程的锁。
+
 - 保证加锁和删除锁是同一个线程
 - 使用lua脚本
 ```$xslt
@@ -87,3 +89,42 @@ end
 
 - EventProducer将事件推送到消息队列中：lpush 
 - EventConsumer监听队列，只要监测到有事件到达，使用brpop阻塞的从列表中取出消息，交给对应的Handler进行处理。
+
+####1. 定义事件类型 -- 定义Enum类 -- EnumType
+
+- 用于表示该事件的类型
+
+####2. 定义事件的实体 -- EventModel
+
+这里说明一下entityOwnerId的必要性。举个例子，当我们给一个人点赞时，系统要给那个人（也就是entityOwnerId）发送一个站内信，通知那个人他被点赞了。当然，我们也可以把entityOwnerId包装在exts里，但因为几乎每一个事件都需要这个字段，所以这里我们开一个字段给他。
+
+####3. 生产者的实现 -- EventProducer
+
+这里的队列我们使用Redis的阻塞双向队列list来实现。
+若不设置阻塞，若list为空，消费者就需要轮询来获取数据，这样就会增加resis的访问压力，增加消费端的cpu时间，而很多访问都是无用的，
+为此redis提供了阻塞式访问BPPOP命令，消费者可以在获取数据时指定数据不存在时阻塞的时间，
+如果在时限内获得数据则立即返回，若超时还没有数据则返回null，超时时间为0表示一直阻塞。
+
+- a) 我们先用JSON把事件序列化
+- b) 再通过lpush把事件推进队列里
+
+####4. 定义一个事件处理器的接口 -- EventHandler
+
+####5. 消费者的实现 -- EventConsumer
+
+- a）创建一个类型为Map<EventType, List<EventHandler>>的map，用于存放所有的Handler。
+- b）在afterPropertiesSet函数中（这个函数在sping在初始化完该Bean后会执行），我们通过applicationContext获取实现了EventHandler接口的全部Handler。
+    - b.1）通过for循环，分门别类的把各个Handler放到map中。
+    - b.2）启动线程去消化事件
+        - b.2.1）该线程使用死循环让其不间断的运行。
+        - b.2.2）用brpop把事件拉出来
+        - b.2.3）过滤掉key之后，剩下value，把value用JSON的api转化为EventModel
+        - b.2.4）在map中寻找是否有能处理EventModel的Handler，判断方法是看EventType是否支持。
+        - b.2.5）过滤掉不支持的EventType之后，调用每一个支持该EventType的doHandle方法。
+
+
+
+
+  
+  
+
