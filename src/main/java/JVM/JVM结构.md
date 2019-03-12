@@ -4,6 +4,7 @@
 运行数据区域（Runtime Data Area）
 
 执行引擎（Execute Engine）
+
 ![](虚拟机结构.png)
 
 ###java虚拟机
