@@ -3,7 +3,7 @@ package 数据结构与算法.算法.Ali.面试题2;
 import java.util.Scanner;
 
 /**
- * FileName: Solution
+ * FileName: Cake
  * Author:   ifcc
  * School:   Southeast University
  * Date:     2018/8/1 22:31

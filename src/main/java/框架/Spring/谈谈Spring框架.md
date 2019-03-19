@@ -37,32 +37,6 @@ Context封装包的特性得自于Beans封装包，并添加了对国际化（I1
 Spring的MVC框架并不是仅仅提供一种传统的实现，它提供了一种清晰的分离模型，在领域模型代码和Web Form之间。
 并且，还可以借助Spring框架的其他特性。
 
-###IOC
-- Inversion of Control，即控制反转，传统Java SE程序设计，我们直接在对象内部通过new进行创建对象，
-是程序主动去创建依赖对象；而IOC是有专门一个容器来创建这些对象，即由IOC容器来控制对象的创建；
-所谓IoC，对于spring框架来说，就是由spring来负责控制对象的生命周期和对象间的关系。
-
-- IOC的一个重点是在系统运行中，动态的向某个对象提供它所需要的其他对象。这一点是通过DI
-（Dependency Injection，依赖注入）来实现的。
-
-- 依赖注入的方式：
-    * 构造器注入：在配置文件中配置该类的bean，并配置构造器，在配置构造器中用到了<constructor-arg>节点，
-    该节点有四个属性：
-        - index是索引，指定注入的属性，从0开始，如：0代表personDao，1代表str属性；
-        - type是指该属性所对应的类型；
-        - ref 是指引用的依赖对象；
-        - value 当注入的不是依赖对象，而是基本数据类型时，就用value；
-    * 使用属性的setter方法注入
-    * 使用字段（Filed注入）注解方式
-@Resource
-@Autowired + @Qualifier
-@Autowired默认按类型装配，@Resource默认按名称装配，用@Resource进行依赖注入，它先会根据指定的name属性去Spring容器
-中寻找与该名称匹配的对象，例如：@Resource(name="userDao")，如果没有找到该名称，则会按照类型去寻找，
-<context:annotation-config>处理@autowired之类的注解（共有四类）前提是注解作用的类已经被注册到spring容器里
-（bean id="" class=""） 
-<context:component-scan>除了包含<context:annotation-config>的作用外，还能自动扫描和注册base-package下有
-@component之类注解的类，将其作为bean注册到spring容器里
-所以配置文件如果有<context:component-scan>就不需要<context:annotation-config>了。
 
 ###Spring AOP实现事务
 - 首先从DataSource由谁管理入手，在Spring中配置了一个DataSourceTransactionManager对象，会将DataSource注入到这个对象中。

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * 给定三种类型的小球P、Q、R，每种小球的数量分别为np、nq、nr个。现在想将这些小球排成一条直线，但是不允许相同类型的小球相邻，问有多少种排列方法。如若np=2，nq=1，nr=1则共有6种排列方式：PQRP，QPRP，PRQP，RPQP，PRPQ以及PQPR。 如果无法组合出合适的结果，则输出0。
- * FileName: Solution
+ * FileName: Cake
  * Author:   ifcc
  * School:   Southeast University
  * Date:     2018/9/18 20:18

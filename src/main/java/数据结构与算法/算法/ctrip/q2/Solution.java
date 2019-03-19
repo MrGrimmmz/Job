@@ -5,13 +5,13 @@
 //import java.util.Scanner;
 //
 ///**
-// * FileName: Solution
+// * FileName: Cake
 // * Author:   ifcc
 // * School:   Southeast University
 // * Date:     2018/9/4 19:47
 // * Description:
 // */
-//public class Solution {
+//public class Cake {
 //    public static void main(String[] args){
 //        Scanner scanner = new Scanner(System.in);
 //        int n = Integer.valueOf(scanner.nextLine().trim());

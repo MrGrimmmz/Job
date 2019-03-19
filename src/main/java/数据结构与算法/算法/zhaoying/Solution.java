@@ -3,7 +3,7 @@ package 数据结构与算法.算法.zhaoying;
 import java.util.Scanner;
 
 /**
- * FileName: Solution
+ * FileName: Cake
  * Author:   ifcc
  * School:   Southeast University
  * Date:     2018/9/8 11:34

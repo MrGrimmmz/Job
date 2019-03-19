@@ -1,0 +1,72 @@
+###IOC
+- Inversion of Control，即控制反转，传统Java SE程序设计，我们直接在对象内部通过new进行创建对象，
+是程序主动去创建依赖对象；而IOC是有专门一个容器来创建这些对象，即由IOC容器来控制对象的创建；
+所谓IoC，对于spring框架来说，就是由spring来负责控制对象的生命周期和对象间的关系。
+
+- IOC的一个重点是在系统运行中，动态的向某个对象提供它所需要的其他对象。这一点是通过DI
+（Dependency Injection，依赖注入）来实现的。
+
+- 依赖注入的方式：
+    * 构造器注入：在配置文件中配置该类的bean，并配置构造器，在配置构造器中用到了<constructor-arg>节点，
+    该节点有四个属性：
+        - index是索引，指定注入的属性，从0开始，如：0代表personDao，1代表str属性；
+        - type是指该属性所对应的类型；
+        - ref 是指引用的依赖对象；
+        - value 当注入的不是依赖对象，而是基本数据类型时，就用value；
+    * 使用属性的setter方法注入
+    * 使用字段（Filed注入）注解方式
+- @Resource
+- @Autowired + @Qualifier
+- @Autowired默认按类型装配，@Resource默认按名称装配，用@Resource进行依赖注入，它先会根据指定的name属性去Spring容器
+中寻找与该名称匹配的对象，
+- 例如：@Resource(name="userDao")，如果没有找到该名称，则会按照类型去寻找，
+<context:annotation-config>处理@autowired之类的注解（共有四类）前提是注解作用的类已经被注册到spring容器里
+（bean id="" class=""） 
+<context:component-scan>除了包含<context:annotation-config>的作用外，还能自动扫描和注册base-package下有
+@component之类注解的类，将其作为bean注册到spring容器里
+所以配置文件如果有<context:component-scan>就不需要<context:annotation-config>了。
+
+###Ioc容器的初始化
+- Ioc容器的初始化是由refresh（）方法来启动的，这个方法标志着Ioc容器的正式启动。
+启动过程包括三个基本过程：
+
+1. BeanDifinition的Resource定位
+    - 这个Resource定位指的是BeanDifinition的资源定位，它由ResourceLoader通过统一的Resource接口来完成，这个Resource对各种形式的BeanDifinition的使用都提供了统一的接口
+    
+2. BeanDifinition的载入与解析
+    - 这个载入过程是把用户定义好的Bean表示成Ioc容器内部的数据结构，而这个容器内部的数据结构就是BeanDifinition。具体来说，BeanDifinition实际上就是POJO对象在IOC容器中的抽象，通过这个BeanDifinition定义的数据结构，使IOC容器能够方便的对POJO对象也就是Bean进行管理。
+    
+3. BeanDifinition在Ioc容器中的注册
+    - 这个操作是通过调用BeanDifinitionRegistry借口来实现的。这个注册过程把载入过程中解析得到的BeanDifinition向Ioc容器进行注册。在阅读源码中可知，在IOC容器内部将BeanDifinition注入到一个HashMap中去，Ioc容器就是通过这个HashMap来持有这些BeanDifinition数据的。
+
+###Spring IOC加载全过程
+![](IOC加载.jpg)
+
+- 包括容器初始化，bean的初始化、实例化、属性注入
+
+1. Application加载xml
+2. AbstractApplicationContext的refresh函数载入Bean定义过程
+3. AbstractApplicationContext子类的refreshBeanFactory()方法
+4. AbstractRefreshableApplicationContext子类的loadBeanDefinitions方法
+5. AbstractBeanDefinitionReader读取Bean定义资源
+6. 资源加载器获取要读入的资源
+7. XmlBeanDefinitionReader加载Bean定义资源
+8. DocumentLoader将Bean定义资源转换为Document对象
+9. XmlBeanDefinitionReader解析载入的Bean定义资源文件
+10. DefaultBeanDefinitionDocumentReader对Bean定义的Document对象解析
+11. BeanDefinitionParserDelegate解析Bean定义资源文件中的元素
+12. BeanDefinitionParserDelegate解析元素
+13. 解析元素的子元素
+14. 解析子元素
+15. 解析过后的BeanDefinition在IoC容器中的注册（IoC容器的初始化结束）
+16. DefaultListableBeanFactory向IoC容器注册解析后的BeanDefinition（依赖注入开始）
+17. AbstractBeanFactory通过getBean向IoC容器获取被管理的Bean
+18. AbstractAutowireCapableBeanFactory创建Bean实例对象
+19. createBeanInstance方法创建Bean的java实例对象
+20. SimpleInstantiationStrategy类使用默认的无参构造方法创建Bean实例化对象
+21. populateBean方法对Bean属性的依赖注入
+22. BeanDefinitionValueResolver解析属性值
+23. BeanWrapperImpl对Bean属性的依赖注入
+
+###Bean的生命周期
+

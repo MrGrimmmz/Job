@@ -87,7 +87,7 @@
 //                        break;
 //                    }
 //                    if(flag==-1){
-//                        if(solution(graph,temp,i,j)){
+//                        if(shulie(graph,temp,i,j)){
 //                            list.add(i);
 //                        }
 //                        else {
@@ -114,7 +114,7 @@
 //            T--;
 //        }
 //    }
-//    private static boolean solution(ArrayList<HashSet<Integer>> graph, ArrayList<ArrayList<Integer>> temp,int m,int n){
+//    private static boolean shulie(ArrayList<HashSet<Integer>> graph, ArrayList<ArrayList<Integer>> temp,int m,int n){
 //        for(int i=0;i<temp.size();i++){
 //            if(i==n){
 //                continue;

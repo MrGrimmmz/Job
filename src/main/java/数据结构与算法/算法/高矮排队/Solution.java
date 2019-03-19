@@ -11,7 +11,7 @@ package 数据结构与算法.算法.高矮排队;
  **/
 public class Solution {
     public static void main(String[] args){
-       /* int result = solution();
+       /* int result = shulie();
         System.out.println(result);*/
        DG(0,0,"");
        System.out.println(count);

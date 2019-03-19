@@ -18,7 +18,7 @@ public class Question3 {
             System.out.println("none");
             return;
         }
-       /* int result = solution(string1, string2);
+       /* int result = shulie(string1, string2);
         System.out.println(result);*/
         int[][] re = longestCommonSubsequence(string1, string2);
         //打印矩阵
