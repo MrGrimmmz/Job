@@ -1,0 +1,6 @@
+- 概述: Displays overview information about the Java VM and monitored values.
+- 内存: 显示内存使用信息
+- 线程: 显示线程使用信息
+- 类: 显示类装载信息
+- *VM摘要:*显示java VM信息
+-  MBeans: 显示 MBeans.

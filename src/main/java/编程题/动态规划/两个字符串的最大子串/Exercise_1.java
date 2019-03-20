@@ -1,4 +1,4 @@
-package 数据结构与算法.算法.两个字符串的最大子串;
+package 编程题.动态规划.两个字符串的最大子串;
 
 import java.util.Scanner;
 
@@ -28,21 +28,20 @@ public class Exercise_1 {
                     }else {
                         dp[i][j]=1;
                     }
-
                 }
-
             }
         }
-        int maxI=0,maxJ=0,maxLength=0;
+        //找到最大的子串的末尾位置
+        int maxI=0,maxLength=0;
         for (int i=0;i<string1.length();i++){
             for (int j=0;j<string2.length();j++){
                 if (dp[i][j]>maxLength){
                     maxI=i;
-                    maxJ=j;
                     maxLength=dp[i][j];
                 }
             }
         }
+        //输出最大公共子串
         for (int i=maxI-maxLength+1;i<=maxI;i++){
             System.out.print(string1.charAt(i));
         }
