@@ -1,6 +1,6 @@
 //package 数据结构与算法.算法.ctrip.q2;
 //
-//import java.util.HashMap;
+//import java.util.Map;
 //import java.util.LinkedList;
 //import java.util.Scanner;
 //
@@ -16,7 +16,7 @@
 //        Scanner scanner = new Scanner(System.in);
 //        int n = Integer.valueOf(scanner.nextLine().trim());
 //        LinkedList<Integer> list=new LinkedList<>();
-//        HashMap<Integer, Integer> map = new HashMap<>();
+//        Map<Integer, Integer> map = new Map<>();
 //        while (scanner.hasNext()){
 //            String s = scanner.nextLine().trim();
 //            String[] stringArray = s.split(" ");

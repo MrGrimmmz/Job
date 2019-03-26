@@ -1,8 +1,0 @@
-###ArrayList与LinkedList
-- ArrayList 数组结构：改查效率高，通过索引不需要遍历
-- LinkedList 链表结构：增删效率高，只修改前后指针
-
-###在ArrayLIst和LinkedList尾部加元素,谁的效率高
-当输入的数据一直是小于千万级别的时候，大部分是LinkedList效率高，而当数据量大于千万级别的时候，就会出现ArrayList的效率比较高了。为什么呢？
-
-原来 LinkedList每次增加的时候，会new 一个Node对象来存新增加的元素，所以当数据量小的时候，这个时间并不明显，而ArrayList需要扩容，所以LinkedList的效率就会比较高，其中如果ArrayList出现不需要扩容的时候，那么ArrayList的效率应该是比LinkedList高的，当数据量很大的时候，new对象的时间大于扩容的时间，那么就会出现ArrayList的效率比LinkedList高了

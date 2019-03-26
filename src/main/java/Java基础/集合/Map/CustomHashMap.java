@@ -1,4 +1,4 @@
-package Java基础.集合.HashMap;
+package Java基础.集合.Map;
 
 public class CustomHashMap<K, V> {
 

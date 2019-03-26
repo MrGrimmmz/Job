@@ -25,7 +25,7 @@ public class Question2 {
         System.out.println(result);
     }
     public static Object solution(String json,String question){
-        //HashMap<String, Object> map = new HashMap<String, Object>();
+        //Map<String, Object> map = new Map<String, Object>();
         json=json.substring(1,json.length()-1);
         String[] jsonArray = json.split(",");
         for (int i=0;i<jsonArray.length;i++){

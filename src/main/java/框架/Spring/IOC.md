@@ -6,20 +6,51 @@
 - IOC的一个重点是在系统运行中，动态的向某个对象提供它所需要的其他对象。这一点是通过DI
 （Dependency Injection，依赖注入）来实现的。
 
-- 依赖注入的方式：
-    * 构造器注入：在配置文件中配置该类的bean，并配置构造器，在配置构造器中用到了<constructor-arg>节点，
-    该节点有四个属性：
+###依赖注入的方式：
+
+* 构造器注入：在配置文件中配置该类的bean，并配置构造器，在配置构造器中用到了<constructor-arg>节点，
+    - 该节点有四个属性：
         - index是索引，指定注入的属性，从0开始，如：0代表personDao，1代表str属性；
         - type是指该属性所对应的类型；
         - ref 是指引用的依赖对象；
         - value 当注入的不是依赖对象，而是基本数据类型时，就用value；
-    * 使用属性的setter方法注入
-    * 使用字段（Filed注入）注解方式
-- @Resource
-- @Autowired + @Qualifier
-- @Autowired默认按类型装配，@Resource默认按名称装配，用@Resource进行依赖注入，它先会根据指定的name属性去Spring容器
-中寻找与该名称匹配的对象，
-- 例如：@Resource(name="userDao")，如果没有找到该名称，则会按照类型去寻找，
+
+* 使用属性的setter方法注入
+
+```aidl
+<!-- 属性注入 -->
+<bean id="car" class="com.spring.model.Car">  
+    <property name="maxSpeed" value="200"></property>
+    <property name="brand" value="红旗CA72"></property>  
+    <property name="price" value="200000.00"></property>
+</bean>
+```
+
+```aidl
+/**
+ * 属性注入
+ */
+@Test
+public void test(){
+    //读取配置文件
+    ApplicationContext ctx=new ClassPathXmlApplicationContext("applicationContext.xml");
+    //获取bean的实例
+    Car car=(Car) ctx.getBean("car");
+    car.run();
+}
+```
+
+- 使用Filed注入（用于注解方式）
+
+###注解
+- @Autowired默认按类型装配
+- @Autowired @Qualifier("personDaoBean") 存在多个实例配合使用
+
+- @Resource默认按名称装配，用@Resource进行依赖注入，它先会根据指定的name属性去Spring容器
+中寻找与该名称匹配的对象，例如：@Resource(name="userDao")，如果没有找到该名称，则会按照类型去寻找，
+
+- @Qualifier注解，默认按名称装配， 但是注意是 类名。
+
 - <context:annotation-config>处理@autowired之类的注解（共有四类）前提是注解作用的类已经被注册到spring容器里
 （bean id="" class=""） 
 - <context:component-scan>除了包含<context:annotation-config>的作用外，还能自动扫描和注册base-package下有
@@ -38,6 +69,9 @@
     
 3. BeanDifinition在Ioc容器中的注册
     - 这个操作是通过调用BeanDifinitionRegistry借口来实现的。这个注册过程把载入过程中解析得到的BeanDifinition向Ioc容器进行注册。在阅读源码中可知，在IOC容器内部将BeanDifinition注入到一个HashMap中去，Ioc容器就是通过这个HashMap来持有这些BeanDifinition数据的。
+
+- 做完这3步，bean就在SpringIoC容器中被定义了，
+而没有被初始化，更没有完成依赖注入，也就没有注入其配置的资源给Bean，那么它还不能完全使用。
 
 ###Spring IOC加载全过程
 ![](IOC加载.jpg)
@@ -69,7 +103,25 @@
 23. BeanWrapperImpl对Bean属性的依赖注入
 
 ###Bean的生命周期
+- Spring Bean的完整生命周期从创建Spring容器开始，直到最终Spring容器销毁Bean
+
+- Bean的完整生命周期经历了各种方法调用，这些方法可以划分为以下几类：
+
+1、Bean自身的方法
+    - 这个包括了Bean本身调用的方法和通过配置文件中<bean>的init-method和destroy-method指定的方法
+
+2、Bean级生命周期接口方法
+    - 这个包括了BeanNameAware、BeanFactoryAware、InitializingBean和DiposableBean这些接口的方法
+
+3、容器级生命周期接口方法
+    - 这个包括了InstantiationAwareBeanPostProcessor 和 BeanPostProcessor 这两个接口实现，一般称它们的实现类为“后处理器”。
+
+4、工厂后处理器接口方法
+    - 这个包括了AspectJWeavingEnabler, ConfigurationClassPostProcessor, CustomAutowireConfigurer等等非常有用的工厂后处理器　　接口的方法。工厂后处理器也是容器级的。在应用上下文装配配置文件之后立即调用。
+
 ![](Bean生命周期.png)
+
+0、当调用者通过 getBean（ name ）向 容器寻找Bean 时，如果容器注册了 org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor接口，在实例 bean 之前，将调用该接口的 postProcessBeforeInstantiation （）方法，
 
 1、实例化一个Bean－－也就是我们常说的new；
 
@@ -92,3 +144,5 @@
 9、当Bean不再需要时，会经过清理阶段，如果Bean实现了DisposableBean这个接口，会调用那个其实现的destroy()方法；
 
 10、最后，如果这个Bean的Spring配置中配置了destroy-method属性，会自动调用其配置的销毁方法。
+
+

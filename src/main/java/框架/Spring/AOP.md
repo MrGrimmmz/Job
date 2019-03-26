@@ -10,6 +10,9 @@ AOP则将封装好的对象剖开，找出其中对多个对象产生影响的�
     - 使用AspectJ 注解风格(主要方式)
     - 使用Spring XML 配置风格
 
+###Spring AOP
+- Spring中的AOP代理还是离不开Spring的IOC容器，代理的生成，管理及其依赖关系都是由IOC容器负责，Spring默认使用JDK动态代理，在需要代理类而不是代理接口的时候，Spring会自动切换为使用CGLIB代理，不过现在的项目都是面向接口编程，所以JDK动态代理相对来说用的还是多一些。
+
 ###AOP有哪些可用的实现？
 基于Java的主要AOP实现有：
 
@@ -33,6 +36,24 @@ AOP则将封装好的对象剖开，找出其中对多个对象产生影响的�
 - 围绕通知(Around Advice): 
     - 围绕连接点执行的Advice，就你一个方法调用。这是最强大的Advice。通过 @Around 注解使用。
 
+###通知执行的优先级
+- 进入目标方法时,先织入Around,再织入Before，退出目标方法时，先织入Around,再织入AfterReturning,最后才织入After。
+
+- 注意:Spring AOP的环绕通知会影响到AfterThrowing通知的运行,不要同时使用!同时使用也没啥意义。
+
+###连接点(Joint Point)和切入点(Point cut)是什么？
+- 连接点是程序执行的一个点。例如，一个方法的执行或者一个异常的处理。在 Spring AOP 中，一个连接点总是代表一个方法执行。举例来说，所有定义在你的 EmpoyeeManager 接口中的方法都可以被认为是一个连接点，如果你在这些方法上使用横切关注点的话。
+
+- 切入点(切入点)是一个匹配连接点的断言或者表达式。Advice 与切入点表达式相关联，并在切入点匹配的任何连接点处运行（比如，表达式 execution(* EmployeeManager.getEmployeeById(...)) 可以匹配 EmployeeManager 接口的 getEmployeeById() ）。由切入点表达式匹配的连接点的概念是 AOP 的核心。Spring 默认使用 AspectJ 切入点表达式语言。
+
+###切入点的定义和表达式
+Spring AOP支持的切入点指示符：
+```aidl
+- @Pointcut("execution(* com.aijava.springcode.service..*.*(..))")
+第一个*表示匹配任意的方法返回值，..(两个点)表示零个或多个，上面的第一个..表示service包及其子包,第二个*表示所有类,第三个*表示所有方法，第二个..表示
+方法的任意参数个数
+```
+
 ###Spring AOP 代理是什么？
 - AOP 代理是一个由 AOP 框架创建的用于在运行时实现切面协议的对象
     - JDK代理：对于实现接口的业务对象
@@ -40,8 +61,12 @@ AOP则将封装好的对象剖开，找出其中对多个对象产生影响的�
 
 ###JDK代理
 - JDK的动态代理要使用到一个类 Proxy 用于创建动态代理的对象，
+
 - 一个接口 InvocationHandler用于监听代理对象的行为，
+
 - 其实动态代理的本质就是对代理对象行为的监听。
+
+- JDK动态代理核心还是一个InvocationHandler，记住这个就行了
 
 ##使用场景
 - 权限控制

@@ -17,10 +17,11 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 /***
- * 集合类（List-LinkedList/ArrayList/Vector,Set,Map-HashTable/HashMap）
+ * 集合类（List-LinkedList/ArrayList/Vector,Set,Map-HashTable/Map）
  *
  */
 public class collect004 {
+
     public void map() {
         Map map = new HashMap();
         map.put("key1", "lisi1");

@@ -13,6 +13,16 @@
 - 字节输入流转字符输入流通过 InputStreamReader 实现，该类的构造函数可以传入 InputStream 对象。 
 - 字节输出流转字符输出流通过 OutputStreamWriter 实现，该类的构造函数可以传入 OutputStream 对象。
 
+- InputStream 是所有的输入字节流的父类，它是一个抽象类。
+  ByteArrayInputStream、StringBufferInputStream、FileInputStream 是三种基本的介质流，它们分别从Byte 数组、StringBuffer、和本地文件中读取数据。PipedInputStream 是从与其它线程共用的管道中读取数据，
+
+- OutputStream 是所有的输出字节流的父类，它是一个抽象类。
+  ByteArrayOutputStream、FileOutputStream是两种基本的介质流，它们分别向Byte 数组、和本地文件中写入数据。PipedOutputStream 是向与其它线程共用的管道中写入数据
+
+- 缓冲流：BufferedInputStrean 、BufferedOutputStream、 BufferedReader、 BufferedWriter 增加缓冲功能，避免频繁读写硬盘。
+
+- 数据流： DataInputStream 、DataOutputStream 等-提供将基础数据类型写入到文件中，或者读取出来。
+
 ###如何将一个 java 对象序列化到文件里
 - 在 java 中能够被序列化的类必须先实现 Serializable 接口，该接口没有任何抽象方法只是起到一个标记作用，即标识接口。
 - 假设User类已经实现了Serializable接口：
@@ -34,6 +44,9 @@ objectInputStream.close();
 - 而字符流只能处理字符数据。16位字符
 - 只要是处理纯文本数据，就要优先考虑使用字符流，
 - 除此之外都用字节流。
+
+
+- 结论：优先选用字节流。首先因为硬盘上的所有文件都是以字节的形式进行传输或者保存的，包括图片等内容。但是字符只是在内存中才会形成的，所以在开发中，字节流使用广泛。
 
 ###字节缓冲输入流和字节缓冲输出流
 - 字节流一次读写一个数组的速度明显比一次读写一个字节的速度快很多，这是加入了数组这样的缓冲区效果。java本身在设计的时候，也考虑到了这样的设计思想(装饰设计模式)，所以提供了字节缓冲区流。
