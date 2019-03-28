@@ -18,6 +18,8 @@ public class Solution {
         //求替换后的数组长度
         int newLen = originalLen + numOfBlank * 2;
         str.setLength(newLen);
+
+        //定义两个指针对应替换后数组尾部和原数组尾部
         int indexOfOriginal = originalLen - 1;
         int indexOfNew = newLen - 1;
         while(indexOfOriginal >= 0 && indexOfNew > indexOfOriginal){
