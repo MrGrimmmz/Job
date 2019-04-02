@@ -1,4 +1,7 @@
 ###观察者设计模式
+- 在对象之间定义了一对多的依赖，这样一来，当一个对象改变状态，依赖它的对象会收到通知并自动更新
+
+
 - ApplicationContext事件机制
 
 - 通过继承ApplicationEvent类和实现ApplicationListener接口，可以实现ApplicationContext事件处理。

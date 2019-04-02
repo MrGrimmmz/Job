@@ -7,7 +7,8 @@ package 设计模式.单例模式;
  * 双重检查锁定
  */
 public class Singleton3 {
-    private static Singleton3 singleton = null;
+    //private static Singleton3 singleton = null;
+    private volatile static Singleton3 singleton = null;
     private Singleton3(){
 
     }

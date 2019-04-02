@@ -325,20 +325,7 @@ class Solution {
 
 一个可能的最长回文子序列为 "bb"。
 
-对于任意字符串，如果头尾字符相同，那么字符串的最长子序列等于去掉首尾的字符串的最长子序列加上首尾；如果首尾字符不同，则最长子序列等于去掉头的字符串的最长子序列和去掉尾的字符串的最长子序列的较大者。
-
-因此动态规划的状态转移方程为：
-
-设字符串为str，长度为n，p[i][j]表示第i到第j个字符间的子序列的个数（i<=j），则：
-
-状态初始条件：dp[i][i]=1 （i=0：n-1）
-
-
-**动态规划：**  
-
-    dp[i][j] = dp[i+1][j-1] + 2 if s.charAt(i) == s.charAt(j) 
-
-    dp[i][j] = Math.max(dp[i+1][j], dp[i][j-1]) if s.charAt(i) != s.charAt(j)
+**动态规划：**  dp[i][j] = dp[i+1][j-1] + 2 if s.charAt(i) == s.charAt(j) otherwise, dp[i][j] = Math.max(dp[i+1][j], dp[i][j-1])
 
 ```java
 class Solution {

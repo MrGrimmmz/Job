@@ -37,3 +37,6 @@
 - volatile不会造成线程的阻塞；synchronized可能会造成线程的阻塞。
    
 - volatile标记的变量不会被编译器优化；synchronized标记的变量可以被编译器优化
+
+###Atomic、volatile、synchronized、ThreadLocal优缺点比较
+[参考](https://blog.csdn.net/wang123459/article/details/79035939)

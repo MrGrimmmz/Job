@@ -67,6 +67,7 @@ hashCode()方法和equal()方法的作用其实一样，在Java里都是用来�
 5. 重写equals()方法时需要重写hashCode(),若不重写，就会导致两个equals()判断相等的
 对象加入HashMap时，因为返回的HashCode不同而被分在不同的哈希桶中，造成重复添加元素
     - hashCode 方法的常规协定，该协定声明相等对象必须具有相等的哈希码
+
 ##比较
 两个对象equals，则hashCode一定相等，因为计算方式一样
 
