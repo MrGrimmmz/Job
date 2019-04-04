@@ -1,26 +1,39 @@
 package 编程题;
 
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * @author LIFAN
  * 2019/3/12 15:09
  */
 public class Solution {
-    public static void jiami(char[] str,int[] p,int n,int m){
 
+    public static void leftMove(String str, int num) {
 
     }
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        int[] p = new int[n];
 
-        for (int i = 0; i < n; i++) {
-            p[i] = scan.nextInt();
+        Set<String> strSet = new HashSet<String>();
+        List<String> strList = new ArrayList<String>(100);
+
+        while(true){
+            String str = scan.nextLine();
+            if (str.equals("")) {
+                break;
+            }
+            strList.add(str);
         }
 
+        strList.addAll(strSet);
+
+
+
+        Iterator<String> iterator = strList.iterator();
+        while(iterator.hasNext()){
+            System.out.print(iterator.next()+" ");
+        }
     }
 
 }
