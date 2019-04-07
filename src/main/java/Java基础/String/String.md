@@ -6,6 +6,7 @@
 * 如果是使用StringBuffer类则结果就不一样了，每次结果都会对StringBuffer对象本身进行操作，
 而不是生成新的对象
 * StringBuilder：线程非安全的；StringBuffer：线程安全的
+
 ####总结
 * 如果要操作少量的数据用 String
 

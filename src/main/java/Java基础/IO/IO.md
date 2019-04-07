@@ -1,6 +1,7 @@
 ###IO流概念
 - IO流用来处理设备之间的数据传输，Java对数据的操作是通过流的方式，Java用于操作流的类都在IO包中
 
+
 ###分类
 - 按照流的方向:输入流(inputStream)和输出流(outputStream)。
 

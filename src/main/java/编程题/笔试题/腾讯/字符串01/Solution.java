@@ -1,6 +1,6 @@
-package 编程题;
+package 编程题.笔试题.腾讯.字符串01;
 
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * @author LIFAN
@@ -17,6 +17,14 @@ public class Solution {
         int a = 0;
         int b = 0;
 
+        for(int i=0; i<n; i++){
+            char tmp = s.charAt(i);
+            if(tmp=='0'){
+                a++;
+            } else{
+                b++;
+            }
+        }
         int res = Math.abs(a-b);
 
         System.out.println(res);
