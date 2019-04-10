@@ -32,7 +32,8 @@ public class KMP {
         next[0] = -1;
 
         while(j < length - 1) {
-            if (k == -1 || c[j] == c[k]) { //当两个字符相等时要跳过
+            if (k == -1 || c[j] == c[k]) {
+                //当两个字符相等时要跳过
                 if(c[++j] == c[++k]){
                     next[j] = next[k];
                 }else{

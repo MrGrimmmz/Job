@@ -1,3 +1,8 @@
+
+##[参考1](http://www.importnew.com/28263.html)
+
+##[参考2](https://www.jianshu.com/p/95a9a82d7a1c)
+
 ####ConcurrentHashMap
 * 底层采用分段的数组+链表实现，线程安全
 * 通过把整个Map分为N个Segment，可以提供相同的线程安全，但是效率提升N倍，默认
@@ -10,7 +15,7 @@ ConcurrentHashMap允许多个修改操作并发进行，其关键在于使用了
 * 扩容：段内扩容（段内元素超过该段对应Entry数组长度的75%触发扩容，不会对整个
 Map进行扩容），插入前检测需不需要扩容，有效避免无效扩容
 
-####ConcurrentHashMap的工作原理
+####ConcurrentHashMap的工作原理（Java 1.7）
 * ConcurrentHashMap采用了非常精妙的"分段锁"策略，ConcurrentHashMap的主干
 是个Segment数组。
 * Segment继承了ReentrantLock，所以它就是一种可重入锁（ReentrantLock)。

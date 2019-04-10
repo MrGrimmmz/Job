@@ -8,7 +8,7 @@
 - SISMEMBER key member 
 - 判断 member 元素是否是集合 key 的成员
 
-##关注，粉丝，浏览量
+##关注，粉丝
 添加关注
 - ZADD key score1 member1 [score2 member2] 
 - 向有序集合添加一个或多个成员，或者更新已存在成员的分数

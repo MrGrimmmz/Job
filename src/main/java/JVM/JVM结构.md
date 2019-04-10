@@ -1,3 +1,5 @@
+###[参考](https://www.imooc.com/article/30580)
+
 ###JVM组成结构
 类加载子系统（ClassLoader）
 

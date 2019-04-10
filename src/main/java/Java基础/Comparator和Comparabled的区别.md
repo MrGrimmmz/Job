@@ -5,7 +5,10 @@
 - Comparable
 
     - Comparable 定义在 Person类的内部:
-    ```aidl
+    - 好处：简单实现，只需实现Comparable接口即可
+    - 但需要修改源代码
+    
+```aidl
     public class Person implements Comparable {
          String name;
          int age
@@ -20,15 +23,16 @@
          }
     }
   这时我们可以直接用 Collections.sort( personList ) 对其排序了.
-    ```
-    - 好处：简单实现，只需实现Comparable接口即可
-    - 但需要修改源代码
+```
+
     
     
 - Comparator
   
     - Comparator 是定义在Person的外部的, 此时我们的Person类的结构不需要有任何变化,然后我们另外定义一个比较器:如
-    ```aidl
+    - 不需要修改源代码，另外实现一个比较器。
+
+```aidl
       public class Person{
            String name;
            int age
@@ -46,9 +50,8 @@
            }
       }
          Collections.sort( personList , new PersonComparator()) 可以对其排序
-
-    ```  
-    - 不需要修改源代码，另外实现一个比较器。
+```  
+   
 
   
 

@@ -14,3 +14,5 @@
     （要求Redis支持持久化），找到则复制到本机，实现Session共享和高可用。
     
 ###session放入redis
+
+##[参考](https://www.cnblogs.com/lingshao/p/5580287.html)
