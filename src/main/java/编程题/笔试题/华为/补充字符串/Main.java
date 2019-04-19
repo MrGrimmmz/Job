@@ -7,7 +7,8 @@ package 编程题.笔试题.华为.补充字符串;
 import java.util.*;
 public class Main{
 
-    private static Scanner scanner=new  Scanner(System.in);
+    private static Scanner scanner = new  Scanner(System.in);
+
     public static void main(String[] args){
         int n = Integer.valueOf(scanner.next());
         ArrayList<String> arrayList = new ArrayList<String>();
@@ -42,7 +43,7 @@ public class Main{
             }
         }
 
-        String[]  sortArray=sb.toString().split(" ");
+        String[]  sortArray = sb.toString().split(" ");
         Arrays.sort(sortArray,new Comparator<String>(){
             @Override
             public int compare(String str1,String str2){
@@ -52,7 +53,8 @@ public class Main{
             }
         });
 
-        StringBuilder result=new StringBuilder();
+        //Arrays.sort(sortArray);
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i <sortArray.length ; i++) {
             result.append(sortArray[i]+" ");
         }
