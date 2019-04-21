@@ -4,6 +4,8 @@ package 数据结构与算法.数据结构.遍历二叉树;
  * @author LIFAN
  * 2019/3/10 12:37
  */
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 import java.util.HashMap;
 
@@ -105,6 +107,31 @@ public class BinTree {
         }
     }
 
+    /**
+     * 对列法实现二叉树广度优先遍历，队列遵循先进先出的规则，适合本方法
+     * @param root
+     */
+    public static void levelOrer(BinTree root){
+        Queue<BinTree> queue = new LinkedList<BinTree>();//新增队列
+
+        if(root != null){
+            queue.add(root);//将根节点加入队列
+        }
+
+        while (!queue.isEmpty()){
+            BinTree cur = queue.peek();//创建cur的目的是在while循环的时候逐层将树带入，如果直接用root,会导致只能输出一级树
+            System.out.print(cur.data + " ");
+            queue.remove();
+            if (cur.lchild != null){
+                queue.add(cur.lchild);//先将左分支加入队列，之后先输出
+            }
+            if(cur.rchild != null){
+                queue.add(cur.rchild);
+            }
+        }
+
+    }
+
     public static void main(String[] args) {
         BinTree b1 = new BinTree('a');
         BinTree b2 = new BinTree('b');
@@ -124,16 +151,18 @@ public class BinTree {
         b2.lchild = b4;
         b2.rchild = b5;
 
-        BinTree.preOrder(b1);
-        System.out.println();
-        BinTree.preOrder2(b1);
-        System.out.println();
-        BinTree.InOrder(b1);
-        System.out.println();
-        BinTree.InOrder2(b1);
-        System.out.println();
-        BinTree.PostOrder(b1);
-        System.out.println();
+//        BinTree.preOrder(b1);
+//        System.out.println();
+//        BinTree.preOrder2(b1);
+//        System.out.println();
+//        BinTree.InOrder(b1);
+//        System.out.println();
+//        BinTree.InOrder2(b1);
+//        System.out.println();
+//        BinTree.PostOrder(b1);
+//        System.out.println();
         BinTree.PostOrder2(b1);
+//        System.out.println();
+//        BinTree.levelOrer(b1);
     }
 }
