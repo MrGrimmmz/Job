@@ -27,6 +27,10 @@ cond.signal();
 cond.signalAll();
 ```
 
+###ReentrantLock与Synchronized的区别
+###[参考1](https://www.cnblogs.com/baizhanshi/p/7211802.html)
+###[参考2](https://www.cnblogs.com/amberbar/p/10296946.html)
+
 ###仅当内置锁不能满足需求时，才可以考虑使用ReentrantLock
  当需要一些高级功能时使用，高级功能包括：
  - 可定时可轮询的与可中断的锁获取操作
@@ -58,3 +62,5 @@ cond.signalAll();
       （3）锁降级：遵循获取写锁、获取读锁再释放写锁的次序，写锁能够降级成为读锁。
 
 ##[参考](https://blog.csdn.net/j080624/article/details/82790372)
+
+

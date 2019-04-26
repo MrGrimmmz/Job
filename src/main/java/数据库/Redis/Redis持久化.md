@@ -49,7 +49,18 @@ auto-aof-rewrite-min-size 64mb       #触发AOF文件重写的条件（默认）
 
 - 但AOF也有一个不可忽视的问题：AOF文件过大。你对redis数据库的每一次写操作都会让AOF文件里增加一条数据，久而久之这个文件会形成一个庞然大物。还好的是redis提出了AOF重写的机制，即我们上面配置的auto-aof-rewrite-percentage和auto-aof-rewrite-min-size。
 
-- 我们只要知道AOF重写既是重新创建一个精简化的AOF文件，里面去掉了多余的冗余命令，并对原AOF文件进行覆盖。这保证了AOF文件大小处于让人可以接受的地步。
+###解决AOF文件过大
+####AOF重写：
+(1) 随着AOF文件越来越大，里面会有大部分是重复命令或者可以合并的命令（100次incr = set key 100）
+
+(2) 重写的好处：减少AOF日志尺寸，减少内存占用，加快数据库恢复时间。
+
+执行一个 AOF文件重写操作，重写会创建一个当前 AOF 文件的体积优化版本。
+即使 BGREWRITEAOF 执行失败，也不会有任何数据丢失，因为旧的 AOF 文件在 BGREWRITEAOF 成功之前不会被修改。
+从 Redis 2.4 开始，AOF 重写由 Redis 自行触发， BGREWRITEAOF 仅仅用于手动触发重写操作。但网上有网友说已经3.2.5版本了，貌似redis还是没有自动触发BGREWRITEAOF
+稳妥的方法还写一个脚本每天定时去执行
+
+- 我们只要知道AOF重写既是重新创建一个精简化的AOF文件，重写会创建一个当前 AOF 文件的体积优化版本。里面去掉了多余的冗余命令，并对原AOF文件进行覆盖。这保证了AOF文件大小处于让人可以接受的地步。
 
 - Redis 会记录上次重写后AOF文件的文件大小，而当前AOF文件大小跟上次重写后AOF文件大小的百分比超过auto-aof-rewrite-percentage设置的值，同时当前AOF文件大小也超过auto-aof-rewrite-min-size设置的最小值，则会触发AOF文件重写。以上面的配置为例，当现在的AOF文件大于64mb同时也大于上次重写AOF后的文件大小，则该文件就会被AOF重写。
 
