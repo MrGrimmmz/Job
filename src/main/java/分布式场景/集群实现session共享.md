@@ -12,7 +12,10 @@
 3. 基于cache DB缓存的Session共享（推荐，Spring-Session也是同样的原理，同自定义的JRedis一起配置可以实现目的）
     - 使用Redis存取Session信息，应用服务器发生故障时，当Session不在内存中时就会去CacheDB中查找
     （要求Redis支持持久化），找到则复制到本机，实现Session共享和高可用。
-    
+
+4. Sesion数据集中存储
+    - 另外搭建session服务器，与应用服务器进行 通信
+        
 ###session放入redis
 
 ##[参考](https://www.cnblogs.com/lingshao/p/5580287.html)

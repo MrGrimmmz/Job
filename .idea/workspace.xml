@@ -2,27 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f945ceb-9c1a-4f90-a8b5-84a5069cce69" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/JVM/内存溢出与内存泄漏.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/分布式场景/分布式系统.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/并发编程/多线程交替打印.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/并发编程/守护线程.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/并发编程/锁/Monitor.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/并发编程/锁/信号量与锁.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/计算机网络/七层协议.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/分布式场景/消息队列.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/框架/Docker/docker.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/终面HR面/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/终面HR面/总结.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/编程题/T1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/编程题/笔试题/ali/FindWordCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/编程题/笔试题/ali/SortLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/并发编程/锁/ReentrantLock锁.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/并发编程/锁/ReentrantLock锁.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/数据库/Redis/Redis持久化.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/数据库/Redis/Redis持久化.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/编程题/topK/TopK问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/编程题/topK/TopK问题.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/设计题/区块链.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/大数据与秒杀/区块链.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/设计题/大数据.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/大数据与秒杀/大数据.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/设计题/秒杀后端架构.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/大数据与秒杀/秒杀后端架构.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/设计题/秒杀场景.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/大数据与秒杀/秒杀场景.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/设计题/秒杀系统场景.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/大数据与秒杀/秒杀系统场景.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/项目简介/分布式场景/8 张图读懂大型网站技术架构.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/分布式场景/8 张图读懂大型网站技术架构.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/项目简介/分布式场景/【面试精选】关于大型网站系统架构你不得不懂的10个问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/分布式场景/【面试精选】关于大型网站系统架构你不得不懂的10个问题.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/项目简介/分布式场景/分布式.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/分布式场景/分布式.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/项目简介/分布式场景/分布式系统.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/项目简介/分布式场景/集群实现session共享.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/分布式场景/集群实现session共享.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/分布式场景/集群实现session共享.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/分布式场景/集群实现session共享.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/并发编程/线程状态同步及死锁.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/并发编程/线程状态同步及死锁.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/数据库/分库分表设计.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/数据库/分库分表与读写分离.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/数据库/存储引擎.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/数据库/存储引擎.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/编程题/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/计算机网络/SSL与TLS.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/计算机网络/http/SSL与TLS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/计算机网络/TCP与UDP的区别.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/计算机网络/tcpip/TCP与UDP的区别.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/计算机网络/socket.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/计算机网络/socket/socket.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/计算机网络/url到显示页面.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/计算机网络/url到显示页面.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/计算机网络/websocket.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/计算机网络/socket/websocket.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/计算机网络/七层协议.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/计算机网络/七层协议.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/项目简介/nginx.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/项目简介/nginx.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/项目简介/项目介绍.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/项目简介/项目介绍.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/编程题/Main.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,8 +41,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="计算机网络.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/计算机网络.md">
+      <file leaf-file-name="项目报错与解决.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/项目报错与解决.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor />
@@ -50,25 +51,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="七层协议.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/七层协议.md">
+      <file leaf-file-name="监控管理系统.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/监控管理系统.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="网络安全.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/网络安全.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="智能停车系统.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/智能停车系统.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="项目介绍.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/项目介绍.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="283">
+                <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="七层协议.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/七层协议.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="TCP与UDP的区别.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/TCP与UDP的区别.md">
+      <file leaf-file-name="创建线程三种方式.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/创建线程三种方式.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor />
@@ -77,50 +103,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tcpip协议.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/tcpip/tcpip协议.md">
+      <file leaf-file-name="线程状态同步及死锁.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/线程状态同步及死锁.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="594">
+                <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GreetingClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/Java网络编程/GreetingClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="url到显示页面.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/url到显示页面.md">
+      <file leaf-file-name="集群实现session共享.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/分布式场景/集群实现session共享.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="459">
+                <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TCP-IP.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/TCP-IP.gif">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="socket.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/socket.gif">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="SSL与TLS.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/SSL与TLS.md">
+      <file leaf-file-name="分库分表与读写分离.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/数据库/分库分表与读写分离.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="1998">
+                <caret line="74" column="13" lean-forward="true" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Redis持久化.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/数据库/Redis/Redis持久化.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1458">
+                <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -164,27 +189,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/JVM/垃圾回收器与内存分配策略.md" />
-        <option value="$PROJECT_DIR$/src/main/java/JVM/JAVA内存模型.md" />
-        <option value="$PROJECT_DIR$/src/main/java/设计模式/单例模式/Singleton2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/设计模式/单例模式/Singleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/设计模式/单例模式/单例模式.md" />
-        <option value="$PROJECT_DIR$/src/main/java/数据结构与算法/数据结构/数据结构.md" />
-        <option value="$PROJECT_DIR$/src/main/java/项目简介/前缀树.md" />
-        <option value="$PROJECT_DIR$/src/main/java/项目简介/前缀树/SensitiveService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/项目简介/前缀树/前缀树.md" />
-        <option value="$PROJECT_DIR$/src/main/java/项目简介/分布式系统.md" />
-        <option value="$PROJECT_DIR$/src/main/java/项目简介/加密算法.md" />
-        <option value="$PROJECT_DIR$/src/main/java/项目简介/网络安全.md" />
-        <option value="$PROJECT_DIR$/src/main/java/Java基础/面向对象.md" />
-        <option value="$PROJECT_DIR$/src/main/java/项目简介/redis/redis.md" />
-        <option value="$PROJECT_DIR$/src/main/java/编程题/笔试题/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/编程题/笔试题/招行信用卡/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/编程题/动态规划/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/编程题/笔试题/招行信用卡/倒水/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/编程题/笔试题/招行信用卡/巧克力/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/数据库/事务管理.md" />
-        <option value="$PROJECT_DIR$/src/main/java/项目简介/项目介绍.md" />
         <option value="$PROJECT_DIR$/src/main/java/操作系统/进程与线程.md" />
         <option value="$PROJECT_DIR$/src/main/java/设计模式/单例模式/Singleton3.java" />
         <option value="$PROJECT_DIR$/src/main/java/编程题/排序/堆排序/HeapSort.java" />
@@ -198,11 +206,9 @@
         <option value="$PROJECT_DIR$/src/main/java/编程题/笔试题/华为/补充字符串/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/编程题/笔试题/华为/补充字符串/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/Java基础/IO/NIO.md" />
-        <option value="$PROJECT_DIR$/src/main/java/数据库/分库分表设计.md" />
         <option value="$PROJECT_DIR$/src/main/java/框架/Mycat/mycat.md" />
         <option value="$PROJECT_DIR$/src/main/java/数据结构与算法/数据结构/遍历二叉树/BinTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/Java基础/final, finally, finalize.md" />
-        <option value="$PROJECT_DIR$/src/main/java/编程题/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/数据库/索引/数据库索引.md" />
         <option value="$PROJECT_DIR$/src/main/java/Java基础/集合/Map/HashMap.md" />
         <option value="$PROJECT_DIR$/src/main/java/并发编程/锁/ReentrantLock锁.md" />
@@ -214,7 +220,26 @@
         <option value="$PROJECT_DIR$/src/main/java/项目简介/分布式场景/分布式系统.md" />
         <option value="$PROJECT_DIR$/src/main/java/数据库/Redis/Redis持久化.md" />
         <option value="$PROJECT_DIR$/src/main/java/编程题/topK/TopK问题.md" />
+        <option value="$PROJECT_DIR$/src/main/java/分布式场景/消息队列.md" />
+        <option value="$PROJECT_DIR$/src/main/java/分布式场景/性能测试.md" />
+        <option value="$PROJECT_DIR$/src/main/java/项目简介/nginx.md" />
+        <option value="$PROJECT_DIR$/src/main/java/编程题/笔试题/ali/SortLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/编程题/笔试题/ali/FindWordCount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/计算机网络/websocket.md" />
+        <option value="$PROJECT_DIR$/src/main/java/计算机网络/socket/websocket.md" />
+        <option value="$PROJECT_DIR$/src/main/java/计算机网络/url到显示页面.md" />
+        <option value="$PROJECT_DIR$/src/main/java/数据库/存储引擎.md" />
+        <option value="$PROJECT_DIR$/src/main/java/数据库/分库分表设计.md" />
+        <option value="$PROJECT_DIR$/src/main/java/编程题/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/编程题/T1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/框架/Docker/docker.md" />
+        <option value="$PROJECT_DIR$/src/main/java/数据库/分库分表与读写分离.md" />
         <option value="$PROJECT_DIR$/src/main/java/计算机网络/七层协议.md" />
+        <option value="$PROJECT_DIR$/src/main/java/编程题/topK/queryTopK.java" />
+        <option value="$PROJECT_DIR$/src/main/java/终面HR面/总结.md" />
+        <option value="$PROJECT_DIR$/src/main/java/分布式场景/集群实现session共享.md" />
+        <option value="$PROJECT_DIR$/src/main/java/项目简介/项目介绍.md" />
+        <option value="$PROJECT_DIR$/src/main/java/并发编程/线程状态同步及死锁.md" />
       </list>
     </option>
   </component>
@@ -227,8 +252,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -273,7 +298,40 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="计算机网络" type="462c0819:PsiDirectoryNode" />
+              <item name="分布式场景" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="job" type="b2602c69:ProjectViewProjectNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="并发编程" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="job" type="b2602c69:ProjectViewProjectNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="数据库" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="job" type="b2602c69:ProjectViewProjectNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="数据库" type="462c0819:PsiDirectoryNode" />
+              <item name="Redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="job" type="b2602c69:ProjectViewProjectNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="终面HR面" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="job" type="b2602c69:ProjectViewProjectNode" />
@@ -344,11 +402,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java" />
       <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\数据库" />
       <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\操作系统" />
       <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\项目简介\分布式场景" />
       <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\设计模式" />
-      <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\项目简介\Dubbo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="编程题.笔试题" />
@@ -357,11 +415,11 @@
       <recent name="编程题.笔试题.科大讯飞.加密" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\计算机网络\socket" />
+      <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\计算机网络\http" />
+      <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\计算机网络\tcpip" />
       <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\项目简介\Dubbo" />
       <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\编程题\笔试题\京东\ti2" />
-      <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\编程题\笔试题\京东\ti1" />
-      <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\项目简介\分布式场景" />
-      <recent name="C:\Users\LIFAN\Desktop\Java_Job\面经\job\src\main\java\项目简介\redis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -376,7 +434,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BinTree">
+  <component name="RunManager" selected="Application.T1">
     <configuration name="BinTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="数据结构与算法.数据结构.遍历二叉树.BinTree" />
       <module name="job" />
@@ -395,17 +453,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="编程题.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="编程题.笔试题.华为.翻转字符串.Main" />
-      <module name="job" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="编程题.笔试题.华为.翻转字符串.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -465,13 +512,24 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="编程题.笔试题.华为.翻转字符串.Solution" />
+    <configuration name="SortLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="编程题.笔试题.ali.SortLinkedList" />
       <module name="job" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="编程题.笔试题.华为.翻转字符串.*" />
+          <option name="PATTERN" value="编程题.笔试题.ali.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="T1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="编程题.T1" />
+      <module name="job" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="编程题.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -519,18 +577,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main (1)" />
-      <item itemvalue="Application.Main (2)" />
-      <item itemvalue="Application.Solution" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.BinTree" />
+      <item itemvalue="Application.SortLinkedList" />
+      <item itemvalue="Application.T1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.T1" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.SortLinkedList" />
         <item itemvalue="Application.BinTree" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -565,15 +623,15 @@
       <workItem from="1553667105222" duration="10215000" />
       <workItem from="1553746266764" duration="3919000" />
       <workItem from="1554027611004" duration="190425000" />
-      <workItem from="1555307026852" duration="63317000" />
+      <workItem from="1555307026852" duration="103695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="847302000" />
+    <option name="totallyTimeSpent" value="887680000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -590,7 +648,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1546875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14322917" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -623,27 +681,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/锁/信号量与锁.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="432">
-            <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/main/java/编程题/动态规划/LCS2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JVM/内存溢出与内存泄漏.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="13" selection-start-column="13" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/项目报错与解决.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/编程题/动态规划/动态规划.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -651,7 +696,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/自我介绍/自我介绍.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/编程题/动态规划/songsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/编程题/双向链表/DoubleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/分布式场景/【面试精选】关于大型网站系统架构你不得不懂的10个问题.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/Dubbo/Dubbo流程.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/计算机网络.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/url到显示页面.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="216">
+            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/http/https工作原理.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/http/HTTP.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -667,7 +758,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/websocket.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/操作系统/IO多路复用.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -675,7 +766,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/http/HTTP.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/操作系统/后端程序员必备的Linux基础知识.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -683,7 +774,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/http/DNS解析过程.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/操作系统/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -691,10 +782,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/线程的状态.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/操作系统/进程与线程.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/IO/NIO.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/操作系统/中断和系统调用.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/IO/fileStreamTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/IO/IO.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -710,7 +821,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/IO/IO.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/IO/NIO.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -718,7 +829,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JVM/类加载/类加载机制.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/分布式场景/分布式系统.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -726,127 +837,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/基础语法.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JVM/JVM结构.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JVM/JAVA内存模型.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/Array与ArrayList.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/Comparator和Comparabled的区别.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/final, finally, finalize.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/框架/Spring/AOP.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/框架/Spring/IOC.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/守护线程.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="189">
-            <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/多线程交替打印.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="162">
-            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/创建线程三种方式.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/twoThreadPrint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/BlockingQueue实现.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/BATJ都爱问的多线程面试题.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/数据库/Redis/Redis持久化.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="526">
-            <caret line="55" selection-start-line="55" selection-end-line="55" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/数据库/Redis/Redis.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/大数据与秒杀/区块链.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -862,24 +853,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/编程题/topK/queryTopK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/编程题/topK/TopK问题.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="445">
-            <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/分布式场景/8 张图读懂大型网站技术架构.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/大数据与秒杀/秒杀场景.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -887,17 +861,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/分布式场景/分布式系统.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="567">
-            <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/分布式场景/集群实现session共享.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/大数据与秒杀/秒杀系统场景.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -905,7 +869,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/分布式场景/【面试精选】关于大型网站系统架构你不得不懂的10个问题.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/Dubbo/Dubbo+Zookeeper.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -913,31 +877,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/分布式场景/分布式.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/BlockingQueue.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/线程状态同步及死锁.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/redis/redis.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/nginx.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -953,10 +893,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/socket.gif">
+    <entry file="file://$PROJECT_DIR$/src/main/java/操作系统/Linux指令.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/操作系统/linux常用指令.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/自我介绍/自我介绍.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/redis/redis.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/数据库/Limit查询优化.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/数据库/分布式主键.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/数据库/主从复制.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/SSL与TLS.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/数据库/事务管理.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -964,10 +952,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/TCP-IP.gif">
+    <entry file="file://$PROJECT_DIR$/src/main/java/数据库/SQL优化.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/数据库/mysql架构.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/TCP与UDP的区别.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/数据库/MySQL基本操作.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -975,7 +971,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/tcpip/tcpip协议.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/终面HR面/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -983,41 +979,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/Java网络编程/GreetingClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/url到显示页面.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/终面HR面/总结.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/计算机网络.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/七层协议.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+          <first_editor relative-caret-position="405">
+            <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/计算机网络/七层协议.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/项目报错与解决.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/网络安全.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/智能停车系统.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/监控管理系统.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/数据库/Redis/Redis持久化.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1458">
+            <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/分布式场景/集群实现session共享.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="459">
+            <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/数据库/分库分表与读写分离.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1998">
+            <caret line="74" column="13" lean-forward="true" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/项目简介/项目介绍.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="283">
+            <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/创建线程三种方式.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/线程状态同步及死锁.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="594">
+            <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

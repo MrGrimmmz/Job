@@ -1,5 +1,7 @@
 ###从输入URL到浏览器显示页面发生了什么
 
+###[参考](http://www.ituring.com.cn/article/506680)
+
 ![](url.png)
 
 
