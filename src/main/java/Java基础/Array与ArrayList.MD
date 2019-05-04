@@ -11,4 +11,3 @@
 - 方法上的比较： 
   - ArrayList作为Array的增强版，当然是在方法上比Array更多样化，比如添加全部addAll()、删除全部removeAll()、返回迭代器iterator()等。
   
-- 
