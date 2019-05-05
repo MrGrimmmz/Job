@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="8f945ceb-9c1a-4f90-a8b5-84a5069cce69" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/Java基础/异常处理与日志/异常处理.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Java基础/异常处理与日志/日志.md" afterDir="false" />
@@ -8,6 +9,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/Java基础/基础语法.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Java基础/基础语法.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Java基础/面向对象.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Java基础/面向对象.md" afterDir="false" />
     </list>
+=======
+    <list default="true" id="8f945ceb-9c1a-4f90-a8b5-84a5069cce69" name="Default" comment="" />
+>>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -230,11 +234,18 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1920" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -596,13 +607,21 @@
       <workItem from="1554027611004" duration="190425000" />
       <workItem from="1555307026852" duration="104292000" />
       <workItem from="1556718355599" duration="63000" />
+<<<<<<< Updated upstream
       <workItem from="1556718459465" duration="18303000" />
       <workItem from="1556971608119" duration="5051000" />
+=======
+      <workItem from="1556718459465" duration="19069000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="911694000" />
+=======
+    <option name="totallyTimeSpent" value="907409000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
