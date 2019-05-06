@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
 <<<<<<< Updated upstream
     <list default="true" id="8f945ceb-9c1a-4f90-a8b5-84a5069cce69" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Java基础/异常处理与日志/异常处理.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Java基础/异常处理与日志/日志.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Java基础/基础语法.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Java基础/基础语法.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Java基础/面向对象.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Java基础/面向对象.md" afterDir="false" />
     </list>
 =======
     <list default="true" id="8f945ceb-9c1a-4f90-a8b5-84a5069cce69" name="Default" comment="" />
@@ -32,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/基础语法.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="251">
+              <first_editor relative-caret-position="360">
                 <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               </first_editor>
               <second_editor />
@@ -43,12 +39,8 @@
       <file leaf-file-name="ThreadLocalDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/ThreadLocal/ThreadLocalDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-              <folding>
-                <element signature="e#260#444#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -57,8 +49,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/异常处理与日志/异常处理.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="505">
-                <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <first_editor relative-caret-position="528">
+                <caret line="22" selection-start-line="22" selection-end-line="22" />
               </first_editor>
               <second_editor />
             </state>
@@ -69,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/异常处理与日志/日志.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="193">
+              <first_editor relative-caret-position="264">
                 <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               </first_editor>
               <second_editor />
@@ -85,11 +77,6 @@
               <second_editor />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="抽象类与接口的区别.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/抽象类与接口的区别.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="类关系.png" pinned="false" current-in-tab="false">
@@ -113,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/面向对象.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="457">
+              <first_editor relative-caret-position="768">
                 <caret line="32" selection-start-line="32" selection-end-line="32" />
               </first_editor>
               <second_editor />
@@ -125,8 +112,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/设计模式/七大原则.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="505">
-                <caret line="69" column="3" lean-forward="true" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="3" />
+              <first_editor relative-caret-position="1656">
+                <caret line="69" column="3" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -171,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Java基础/IO/NIO.md" />
         <option value="$PROJECT_DIR$/src/main/java/框架/Mycat/mycat.md" />
         <option value="$PROJECT_DIR$/src/main/java/数据结构与算法/数据结构/遍历二叉树/BinTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/数据库/索引/数据库索引.md" />
@@ -222,6 +208,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Java基础/基础语法.md" />
         <option value="$PROJECT_DIR$/src/main/java/Java基础/异常处理/异常处理.md" />
         <option value="$PROJECT_DIR$/src/main/java/Java基础/异常处理与日志/日志.md" />
+        <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
       </list>
     </option>
   </component>
@@ -255,22 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="job" type="58d84e3e:PackageViewProjectNode" />
-              <item name="job" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="job" type="58d84e3e:PackageViewProjectNode" />
-              <item name="job" type="616d4139:PackageViewModuleNode" />
-              <item name="数据结构与算法" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,7 +315,22 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="job" type="58d84e3e:PackageViewProjectNode" />
+              <item name="job" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="job" type="58d84e3e:PackageViewProjectNode" />
+              <item name="job" type="616d4139:PackageViewModuleNode" />
+              <item name="数据结构与算法" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -416,7 +403,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadLocalDemo">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="BinTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="数据结构与算法.数据结构.遍历二叉树.BinTree" />
       <module name="job" />
@@ -558,15 +545,14 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.BinTree" />
       <item itemvalue="Application.SortLinkedList" />
       <item itemvalue="Application.T1" />
-      <item itemvalue="Application.ThreadLocalDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ThreadLocalDemo" />
         <item itemvalue="Application.T1" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.SortLinkedList" />
@@ -609,27 +595,37 @@
       <workItem from="1556718355599" duration="63000" />
 <<<<<<< Updated upstream
       <workItem from="1556718459465" duration="18303000" />
+<<<<<<< Updated upstream
       <workItem from="1556971608119" duration="5051000" />
 =======
       <workItem from="1556718459465" duration="19069000" />
+>>>>>>> Stashed changes
+=======
+      <workItem from="1556971608119" duration="5183000" />
+      <workItem from="1556986274336" duration="73000" />
+      <workItem from="1556986484632" duration="21000" />
+      <workItem from="1556986597652" duration="102000" />
+      <workItem from="1556986924429" duration="26000" />
 >>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="911694000" />
 =======
     <option name="totallyTimeSpent" value="907409000" />
 >>>>>>> Stashed changes
+=======
+    <option name="totallyTimeSpent" value="912048000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.24017467" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -641,7 +637,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.204236" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21633889" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -652,14 +648,15 @@
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3296875" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.24017467" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32897604" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969433" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3296875" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,13 +671,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/twoThreadPrint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/volatile.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1000,8 +990,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/设计模式/七大原则.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="505">
-            <caret line="69" column="3" lean-forward="true" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="3" />
+          <first_editor relative-caret-position="1656">
+            <caret line="69" column="3" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
@@ -1010,7 +1000,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/面向对象.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="457">
+          <first_editor relative-caret-position="768">
             <caret line="32" selection-start-line="32" selection-end-line="32" />
           </first_editor>
           <second_editor />
@@ -1020,7 +1010,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/基础语法.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="251">
+          <first_editor relative-caret-position="360">
             <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           </first_editor>
           <second_editor />
@@ -1037,29 +1027,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/并发编程/ThreadLocal/ThreadLocalDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="e#260#444#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/异常处理与日志/异常处理.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="505">
-            <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <first_editor relative-caret-position="528">
+            <caret line="22" selection-start-line="22" selection-end-line="22" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Java基础/异常处理与日志/日志.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="193">
+          <first_editor relative-caret-position="264">
             <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           </first_editor>
           <second_editor />
