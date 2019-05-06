@@ -9,6 +9,18 @@ package 设计模式.单例模式;
 public class Singleton3 {
     //private static Singleton3 singleton = null;
     private volatile static  Singleton3 singleton = null;
+
+//这里使用volatile是因为实例化一个对象分为三个步骤，
+//  （1）分配内存空间。
+//  （2）初始化对象。
+//  （3）将内存空间的地址赋值给对应的引用。
+// 但是由于操作系统可以对指令进行重排序，所以上面的过程也可能会变成如下过程：
+//  （1）分配内存空间。
+//  （2）将内存空间的地址赋值给对应的引用。
+//  （3）初始化对象
+// 如果是这个流程，多线程环境下就可能将一个未初始化的对象引用暴露出来，从而导致不可预料的结果。
+// 因此，为了防止这个过程的重排序，我们需要将变量设置为volatile类型的变量。
+
     private Singleton3(){
 
     }

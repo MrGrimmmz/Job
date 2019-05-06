@@ -3,6 +3,26 @@
 - 通过提供一组可靠的、高性能并发构建块，开发人员可以提高并发类的线程安全、可伸缩性、性能、可读性和可靠性。
 
 ###结构
+- ( 1 ）线程同步类。
+    - 这些类使线程间的协调更加容易，支持了更加丰富的线程
+协调场景，逐步淘汰了使用Object 的wait（）和notify（）进行同步的方式。主要代表为
+CountDownLatch 、Semaphore 、CyclicBarrier 等。
+
+- ( 2 ）并发集合类。
+    - 集合并发操作的要求是执行速度快，提取数据准。最著名的
+类非ConcurrentHashMap 莫属，它不断地优化，由刚开始的锁分段到后来的CAS,
+不断地提升并发性能。其他还有ConcurrentSkipListMap 、CopyOnWriteArrayList、
+BlockingQueue 等。
+
+- ( 3 ）线程管理类。
+    - 虽然Thread 和ThreadLocal 在JDKl.O 就已经引入，但是真
+正把Thread 发扬光大的是线程池。根据实际场景的需要，提供了多种创建线程池的快捷方式，如使用Executors 静态工厂或者使用ThreadPoolExecutor 等。另外，通过
+ScheduledExecutorService 来执行定时任务。
+
+- ( 4 ）锁相关类。
+    - 锁以Lock接口为核心，派生出在一些实际场景中进行互斥操
+  作的锁相关类。最有名的是ReentrantLock。锁的很多概念在弱化，是因为锁的实现
+  在各种场景中已经通过类库封装进去了。
 
 ![](Concurrent.png)
 
