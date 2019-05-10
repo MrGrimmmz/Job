@@ -32,6 +32,10 @@
 
 - 适用于读多写少的场景
 
+- volatile一写多读最典型的应用是CopyOnWriteArrayList。它在修改数据时会把整个集合的数据全部复制出来，
+  对写操作加锁，修改完成后， 再用setArray（） 把array 指向新的集合。使用volatile 可
+  以便读线程尽快地感知array 的修改， 不进行指令重排，操作后即对其他线程可见。
+
 - JDK中volatie应用：JDK中ConcurrentHashMap的Entry的value和next被声明为volatile，AtomicLong中的value被声明为volatile。AtomicLong通过CAS原理(也可以理解为乐观锁)保证了原子性。
 
 ###volatile 性能：
