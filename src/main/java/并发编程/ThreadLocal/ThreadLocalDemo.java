@@ -68,7 +68,11 @@ public class ThreadLocalDemo {
         public void run() {
             System.out.println(Thread.currentThread().getName() + " Start......");
             // 休眠3s
-            try {TimeUnit.SECONDS.sleep(3);} catch (InterruptedException e) {}
+            try {
+                TimeUnit.SECONDS.sleep(3);
+            } catch (InterruptedException e) {
+
+            }
 
             if (needSet)
                 // 向ThreadLocal设置一个值

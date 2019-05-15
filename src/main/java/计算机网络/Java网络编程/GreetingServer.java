@@ -8,8 +8,7 @@ import java.io.*;
  * 2019/3/26 11:55
  */
 
-public class GreetingServer extends Thread
-{
+public class GreetingServer extends Thread {
     private ServerSocket serverSocket;
 
     public GreetingServer(int port) throws IOException

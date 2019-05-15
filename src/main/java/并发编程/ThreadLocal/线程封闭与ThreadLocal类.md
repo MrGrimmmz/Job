@@ -3,6 +3,8 @@
 
 - ThreadLocal可以为使用相同变量的每个不同的线程都创建不同的存储，这样就可以避免多线程在共享资源的使用上产生冲突
 
+- 英语恰当的名称应该叫作 CopyValuelntoEveryThread
+
 ###ThreadLocal与同步机制的比较：
 - ThreadLocal和线程同步机制都是为了解决多线程中相同变量的访问冲突问题。
 
@@ -20,8 +22,21 @@
 
 3. 使用get获得当前线程的该ThreadLocal的值。
 
+###类图
+
+![](ThreadLocal%20和Thread%20的类关系图.png)
+
+
 ###基本原理
 在ThreadLocal类中定义了一个ThreadLocalMap，每一个Thread都有一个ThreadLocalMap类型的变量threadLocals，就是用threadLocals来存储每一个线程的变量副本，threadLocals内部有一个Entry数组，我们根据键值线程对象，来找到对应线程的变量副本。
+
+![](ThreadLocal的弱引用路线图.png)
+
+- 1 个 Thread 有且仅有1个 ThreadLocalMap 对象，
+- 1 个 Entry 对象的Key弱引用指向1个 ThreadLocal 对象；
+- 1 个 ThreadLocalMap 对象存储多个 Entry 对象，
+- 1 个 ThreadLocal 对象可以被多个线程所共享
+- ThreadLocal 对象不持有 Value, Value 由线程的 Entry 对象持有。
 
 [基本原理](https://www.cnblogs.com/xujian2014/p/5777849.html)
 
@@ -29,7 +44,20 @@
 - 最常见的ThreadLocal使用场景为 用来解决 数据库连接、Session管理等。
 - 无法解决共享对象的更新问题
 
-###注意
+###ThreadLocal 副作用
+- 脏数据
+    - 线程复用会产生脏数据。由于结程池会重用Thread 对象，那么与Thread 绑定的
+      类的静态属性ThreadLocal 变量也会被重用。如果在实现的线程run（）方法体中不显
+      式地调用remove（） 清理与线程相关的ThreadLocal 信息，那么倘若下一个线程不调用
+      set（）设置初始值，就可能get（）到重用的线程信息，包括ThreadLocal 所关联的线程对
+      象的value 值。
+      
+- 内存泄漏
+    - 在源码注释中提示使用static 关键字来修饰ThreadLocal。在此场景下，寄希望于
+      ThreadLocal 对象失去引用后， 触发弱引用机制来回收Entry 的Value 就不现实了。在
+      上例中，如果不进行remove（）操作， 那么这个线程执行完成后，通过ThreadLocal 对象持有的String 对象是不会被释放的。
+
+###解决方案
 - ThreadLocal在线程使用完毕后，要手动调用remove方法，移除他内部的值，防止内存泄露。
 
 ###非线程安全代码：
