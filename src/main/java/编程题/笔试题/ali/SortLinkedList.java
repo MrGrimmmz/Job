@@ -21,6 +21,7 @@ public class SortLinkedList {
         }
     }
 
+    //选择排序
     public static Node sort(Node head){
         int temp;
         Node curNode = head;

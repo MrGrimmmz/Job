@@ -12,7 +12,7 @@ public class GreetingClient
     public static void main(String [] args)
     {
         String serverName = "localhost";
-        int port = 9999;
+        int port = 6066;
         try
         {
             System.out.println("连接到主机：" + serverName + " ，端口号：" + port);
