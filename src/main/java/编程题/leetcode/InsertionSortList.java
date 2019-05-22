@@ -17,9 +17,9 @@ package 编程题.leetcode;
 public class InsertionSortList {
 
     public class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
+       int val;
+       ListNode next;
+       ListNode(int x) { val = x; }
     }
 
     public ListNode insertionSortList(ListNode head) {
@@ -34,43 +34,41 @@ public class InsertionSortList {
 
         // 1.遍历并与前面已经有序的序列向前逐一比较排序，找到合适为止插入
 
-        // 定义三个指针 pre, cur, lat
-        //pre    cur    lat
-        // h  ->  4  ->  2  ->  5  ->  3  ->  null
+        // 定义三个指针 辅助节点aux,pre, cur
+        //aux     pre    cur
+        //aux  ->  4  ->  2  ->  5  ->  3  ->  null
 
-        // 创建 h 节点，用于遍历链表
-        ListNode h = new ListNode(-1);
-        h.next = head;
-        ListNode pre = h;
-        ListNode cur = head;
-        ListNode lat;
+        ListNode pre = head;//pre指向已经有序的节点
+        ListNode cur = head.next;//cur指向待排序的节点
 
-        while (cur != null) {
-            lat = cur.next; // 记录下一个要插入排序的值
+        //辅助节点
+        ListNode aux = new ListNode(-1);
+        aux.next = head;
 
-            if (lat != null && lat.val < cur.val) { // 只有 cur.next 比 cur 小才需要向前寻找插入点
-                // 寻找插入点，从 pre 开始遍历 （每次都是头节点 h 开始向后遍历，因为单向链表是无法从后往前遍）
-                while (pre.next != null && pre.next.val < lat.val) { // 如果当前节点的值小于要插入排序的值
-                    pre = pre.next; // 继续向后移动
+        while(cur!=null){
+            if(cur.val<pre.val){
+                //先把cur节点从当前链表中删除，然后再把cur节点插入到合适位置
+                //记录下一个要插入排序的值
+                pre.next = cur.next;
+
+                //从前往后找到l2.val>cur.val,然后把cur节点插入到l1和l2之间
+                ListNode l1 = aux;
+                ListNode l2 = aux.next;
+                while(cur.val>l2.val){
+                    l1 = l2;
+                    l2 = l2.next;
                 }
+                //把cur节点插入到l1和l2之间
+                l1.next = cur;
+                cur.next = l2;//插入合适位置
 
-                // 找到要插入的位置，此时 pre 节点后面的位置就是 lat 要插入的位置
-                // 交换 pre 跟 lat 节点需要一个 temp 节点来临时保存下插入位置 node 后 next
-                ListNode tmp = pre.next;
-                // 在 pre 节点后面插入
-                pre.next = lat;
-                // 此时 cur 节点还是 pre 所在的节点，所以其 next 要指向插入节点 lat 指向的 next
-                cur.next = lat.next;
-                // 插入let节点后，把记录的原先插入位置后续的 next 节点传给它
-                lat.next = tmp;
-                // 由于每次都是从前往后找插入位置，但是单向链表是无法从后往前遍历，所以需要每次插入完成后要让 pre 复位
-                pre = h;
-            } else {
-                // 都这直接把 cur 指针指向到下一个
-                cur = lat;
+                cur = pre.next;//指向下一个待处理节点
+
+            }else{
+                pre = cur;
+                cur = cur.next;
             }
         }
-
-        return h.next;
+        return aux.next;
     }
 }

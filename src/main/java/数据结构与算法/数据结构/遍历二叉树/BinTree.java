@@ -28,31 +28,12 @@ public class BinTree {
         preOrder(t.rchild);
     }
 
-    // 中序遍历递归
-    public static void InOrder(BinTree t) {
-        if (t == null) {
-            return;
-        }
-        InOrder(t.lchild);
-        System.out.print(t.data);
-        InOrder(t.rchild);
-    }
-
-    // 后序遍历递归
-    public static void PostOrder(BinTree t) {
-        if (t == null) {
-            return;
-        }
-        PostOrder(t.lchild);
-        PostOrder(t.rchild);
-        System.out.print(t.data);
-    }
-
     // 先序遍历非递归
     public static void preOrder2(BinTree t) {
         Stack<BinTree> s = new Stack<BinTree>();
         while (t != null || !s.empty()) {
             while (t != null) {
+                //打印当前节点，然后推入栈中
                 System.out.print(t.data);
                 s.push(t);
                 t = t.lchild;
@@ -63,6 +44,17 @@ public class BinTree {
             }
         }
     }
+
+    // 中序遍历递归
+    public static void InOrder(BinTree t) {
+        if (t == null) {
+            return;
+        }
+        InOrder(t.lchild);
+        System.out.print(t.data);
+        InOrder(t.rchild);
+    }
+
 
     // 中序遍历非递归
     public static void InOrder2(BinTree t) {
@@ -82,17 +74,31 @@ public class BinTree {
         }
     }
 
+    // 后序遍历递归
+    public static void PostOrder(BinTree t) {
+        if (t == null) {
+            return;
+        }
+        PostOrder(t.lchild);
+        PostOrder(t.rchild);
+        System.out.print(t.data);
+    }
+
     // 后序遍历非递归
     public static void PostOrder2(BinTree t) {
         Stack<BinTree> s = new Stack<BinTree>();
         Stack<Integer> s2 = new Stack<Integer>();
+        //设置访问标志
         Integer i = new Integer(1);
+
         while (t != null || !s.empty()) {
             while (t != null) {
                 s.push(t);
                 s2.push(new Integer(0));
                 t = t.lchild;
             }
+
+            //如果最上面的节点左右孩子都已经被访问，则pop并打印
             while (!s.empty() && s2.peek().equals(i)) {
                 s2.pop();
                 System.out.print(s.pop().data);
