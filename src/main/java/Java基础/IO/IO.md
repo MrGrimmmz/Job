@@ -25,21 +25,6 @@
 
 - 数据流： DataInputStream 、DataOutputStream 等-提供将基础数据类型写入到文件中，或者读取出来。
 
-###如何将一个 java 对象序列化到文件里
-- 在 java 中能够被序列化的类必须先实现 Serializable 接口，该接口没有任何抽象方法只是起到一个标记作用，即标识接口。
-- 假设User类已经实现了Serializable接口：
-```$xslt
-//对象输出流
-ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(new File("D://obj"))); 
-objectOutputStream.writeObject(new User("zhangsan", 100));
-objectOutputStream.close();
-//对象输入流
-ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(new File("D://obj")));
-User user = (User)objectInputStream.readObject();
-System.out.println(user);
-objectInputStream.close();
-
-```
 
 ###字节流和字符流的区别
 - 字节流可以处理所有类型数据，8位字节，如:图片，MP3，AVI 视频文件，
@@ -73,6 +58,23 @@ bis.close();
 1. 实现 Cloneable 接口并重写 Object 类中的 clone()方法;
 2. 实现 Serializable 接口，通过对象的序列化和反序列化实现克隆，可以实现真正的深度克隆
 
+###如何将一个 java 对象序列化到文件里
+- 在 java 中能够被序列化的类必须先实现 Serializable 接口，该接口没有任何抽象方法只是起到一个标记作用，即标识接口。
+- 假设User类已经实现了Serializable接口：
+```$xslt
+//对象输出流
+ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(new File("D://obj"))); 
+objectOutputStream.writeObject(new User("zhangsan", 100));
+objectOutputStream.close();
+//对象输入流
+ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(new File("D://obj")));
+User user = (User)objectInputStream.readObject();
+System.out.println(user);
+objectInputStream.close();
+
+```
+
 ###什么是 java 序列化，如何实现 java 序列化
 - 序列化就是一种用来处理对象流的机制，所谓对象流也就是将对象的内容进行流化。可以对流化后的对象进行读 写操作，也可将流化后的对象传输于网络之间。序列化是为了解决在对对象流进行读写操作时所引发的问题。
 - 序列化的实现:将需要被序列化的类实现 Serializable 接口，该接口没有需要实现的方法， implements Serializable 只是为了标注该对象是可被序列化的，然后使用一个输出流(如:FileOutputStream)来构造一个 ObjectOutputStream(对象流)对象，接着，使用 ObjectOutputStream 对象的 writeObject(Object obj)方法就 可以将参数为 obj 的对象写出(即保存其状态)，要恢复的话则用输入流。
+

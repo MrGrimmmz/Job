@@ -76,11 +76,13 @@ public class Solution {
             currentCount++;
         }
     }
+
     private static ReentrantLock lock=new ReentrantLock();
     private static Condition conditionA=lock.newCondition();
     private static Condition conditionB=lock.newCondition();
     private static Condition conditionC=lock.newCondition();
     private static String currentThreadName="A";
+
     public static class ThreadA implements Runnable{
 
         @Override

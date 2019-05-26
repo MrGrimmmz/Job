@@ -32,6 +32,7 @@ public class fileStreamTest2 {
         FileInputStream fip = new FileInputStream(f);
         // 构建FileInputStream对象
 
+
         InputStreamReader reader = new InputStreamReader(fip, "UTF-8");
         // 构建InputStreamReader对象,编码与写入相同
 
