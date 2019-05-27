@@ -13,7 +13,6 @@ public class Singleton4 {
     }
 
     private Singleton4 (){
-
     }
 
     public static final Singleton4 getInstance() {
