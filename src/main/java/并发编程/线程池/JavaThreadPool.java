@@ -6,6 +6,8 @@ package 并发编程.线程池;
  */
 import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.TimeUnit;
+
 public class JavaThreadPool {
     public static void main(String[] args) {
         // 创建一个可重用固定线程数的线程池
@@ -30,5 +32,11 @@ class MyThread extends Thread {
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName() + "正在执行… …");
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -71,7 +71,7 @@ deploy：上传到私服
   
 ###如何解决jar冲突
 ###[参考](http://www.cnblogs.com/davenkin/p/advanced-maven-resolve-dependencies-conflicts.html) 
-   - 遇到冲突的时候第一步要找到maven加载的到时是什么版本的jar包，通过们mvn dependency:tree查看依赖树，通过maven的依赖原则来调整坐标在pom文件的申明顺序是最好的办法。
+   - 遇到冲突的时候第一步要找到maven加载的到时是什么版本的jar包，通过mvn dependency:tree查看依赖树，通过maven的依赖原则来调整坐标在pom文件的申明顺序是最好的办法。
    
    - 如要解决冲突问题，很多时候都用到exclusions,如A->B->D（v1）,A->C-D（v2）,要指定A->D(v1),则需要在声明C的依赖时候通过exclusions列表排除掉对D(v2)的依赖。
    
