@@ -1,6 +1,5 @@
-package Java基础.多线程打印abc;
+package 并发编程.多线程打印abc;
 
-import java.io.PrintWriter;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -9,6 +8,9 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 三个线程交替打印abc10次
+ * 使用ReentrantLock和Condition实现线程顺序执行
+ * 1、利用一个volatile修饰的变量作线程顺序控制
+ * 2、利用不同的Condition对象实现当一个线程结束后，唤醒下一个线程
  * @Author ifcc
  * @Date 2018-04-16
  * @School SouthEast University
@@ -16,7 +18,7 @@ import java.util.concurrent.locks.ReentrantLock;
  **/
 public class Solution {
     public static void main(String[] args){
-        /*new PrintABC("A").start();
+/*        new PrintABC("A").start();
         new PrintABC("B").start();
         new PrintABC("C").start();*/
         ExecutorService service = Executors.newFixedThreadPool(3);
@@ -81,7 +83,7 @@ public class Solution {
     private static Condition conditionA=lock.newCondition();
     private static Condition conditionB=lock.newCondition();
     private static Condition conditionC=lock.newCondition();
-    private static String currentThreadName="A";
+    volatile private static String currentThreadName="A";
 
     public static class ThreadA implements Runnable{
 
